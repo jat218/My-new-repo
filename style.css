@@ -1,0 +1,35 @@
+body {background-color:tomato}
+h1 {
+    color: #f6c248;
+font-size: 45px;
+    font-family: Stencil;
+}
+
+p {
+    color: #f6acf6;
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: 900;
+}
+
+ul{
+    color: #f6162d;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+a {
+    color: #3e4df6;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+.veggie {
+    color: #38f625;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+
+.meat {
+    color: #9c131a;
+    font-size: 18px;
+    font-family: Helvetica;
+}
