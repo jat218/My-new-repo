@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>The Pasta House</h1>
+<h1 id="page_title">The Pasta House</h1>
 <p>Welcome to London&rsquo;s little Italian restaurant</p> Our menu includes:
 <ul>
     <li>Pasta</li>
@@ -13,20 +13,22 @@
     <a href="http://www.littleitalysoho.co.uk">Little Italian London</a>
     <a href="mailto:ruth.swiftwood@gmail.com?subject=hello">mail to ruth</a>
 </ul>
-    <img src="http://cookdiary.net/wp-content/uploads/images/Meatballs.jpg" height="200" width="500"
-         alt="picture of meatballs"/>
-<form class="form-inline">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Screw You"
-    </div>
-    <button type="submit" class="btn btn-default">Get Spammed here</button>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="spammalot@haha.com">
-    </div>
-</form>
+<img src="http://cookdiary.net/wp-content/uploads/images/Meatballs.jpg" height="200" width="500"
+     alt="picture of meatballs"/>
+<div id="signup-container">
+    <form class="form-inline" id="signup-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Screw You">
+        </div>
+        <button type="submit" class="btn btn-default">Get Spammed here</button>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="spammalot@haha.com">
+        </div>
+    </form>
+</div>
 
-
+<script src="script.js"></script>
 </body>
 </html>
