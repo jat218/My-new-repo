@@ -3,22 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Grid Test</title>
+    <meta name="viewport" content="width=device-width, intitial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="gridstyle.css">
 </head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <h1>Title 1</h1>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <h1>Title 2</h1>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <h1>Title 3</h1>
+
+<body id="main-body">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>the PASTA house</h1>
+            <p>Welcome to London&rsquo;s little Italian restaurant</p>
         </div>
     </div>
-</div>
 
+    <div class="container" id="container-main">
+        <div class="row cent-elements">
+            <div class="col-sm-6 col-md-4 hidden-print">
+                <h1 class="cent-head">Meat dishes<sup><span id="newlabel" class="label label-warning">NEW</span></sup> </h1>
+                <ul class="plates">
+                <li>Pasta puttanesca</li>
+                <li>Spag bol</li>
+                <li>Tom Past bake</li>
+                </ul>
+                <!--<img src="duke.jpg" class="img-responsive img-circle">-->
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <h1 class="cent-head">Veggie options</h1>
+                <ul class="plates">
+                    <li>Stuffed peppers</li>
+                    <li>Pesto genovese</li>
+                    <li>Mushroom risotto</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 hidden-print">
+                <h1 class="cent-head">Bevies</h1>
+                <ul class="plates">
+                    <li>Red wine</li>
+                    <li>White wine</li>
+                    <li>BEER!!!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
