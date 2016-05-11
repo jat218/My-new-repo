@@ -1,0 +1,31 @@
+package space.codekingdoms.james8.ex04;
+
+import com.codekingdoms.nozzle.base.BasePlayer;
+import org.bukkit.GameMode;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.Material;
+
+public class Player extends BasePlayer {
+
+	public void onJoin() {
+
+		setGameMode(GameMode.ADVENTURE);
+		sendMessage("S'up y'all ");
+
+	}
+
+	public void equipWeapons() {
+
+		equipWeapons();
+		setItemInMainHand(new ItemStack(Material.STONE_SWORD));
+
+	}
+
+	public void onRespawn() {
+
+		equipWeapons();
+
+	}
+
+
+}

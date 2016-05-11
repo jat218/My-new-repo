@@ -1,0 +1,29 @@
+package space.codekingdoms.james8.ex04;
+
+import com.codekingdoms.nozzle.base.BaseGame;
+import org.bukkit.Location;
+
+public class Game extends BaseGame {
+
+	public Location playerSpawnPoint;
+
+	public Location enemySpawnPoint;
+
+	public void onCodeUpdate() {
+
+		playerSpawnPoint = new Location(world, 690.5, 56, 320);
+		enemySpawnPoint = new Location(world, 702.5, 56, 320);
+		disableMobSpawning();
+		removeAllMobs();
+		world.setTime(10000);
+
+	}
+
+	public Zombaby SpawnWave( Zombaby NewZombie ) {
+
+		SpawnWave(NewZombie).spawn(world, enemySpawnPoint);
+
+	}
+
+
+}
